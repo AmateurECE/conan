@@ -1,3 +1,15 @@
+###############################################################################
+# NAME:             conanfile.py
+#
+# AUTHOR:           Ethan D. Twardy <ethan.twardy@gmail.com>
+#
+# DESCRIPTION:      Conan recipe for building Wangle
+#
+# CREATED:          05/12/2020
+#
+# LAST EDITED:      09/20/2022
+###
+
 from conans import ConanFile, CMake, tools
 import shutil
 import glob
@@ -66,3 +78,4 @@ class WangleConan(ConanFile):
     def package_info(self):
         self.cpp_info.libs = ["wangle"]
 
+###############################################################################
